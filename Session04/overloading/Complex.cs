@@ -53,6 +53,7 @@
                 Img = (c?.Img ?? 0)
             };
         }
+        //--
         public static Complex operator --(Complex c)
         {
             return new Complex()
@@ -60,6 +61,41 @@
                 Real = (c?.Real ?? 0) - 1,
                 Img = (c?.Img ?? 0)
             };
+        }
+
+        // >
+        //public static bool operator > (Complex left , Complex right)
+        //{
+        //    if (left?.Real == right?.Real)
+        //        return right?.Img > left?.Img;
+        //    else
+        //        return left?.Real > right?.Real;
+        //}
+
+        //public static bool operator < (Complex left , Complex right)
+        //{
+        //    if(left?.Real == right?.Real)
+        //        return left?.Img < right?.Img;
+        //    else
+        //        return left?.Real < right?.Real;
+        //}
+
+
+        //<
+
+        public static bool operator > (Complex left , Complex right)
+        {
+            if (left?.Real == right?.Real)
+                return left?.Img > right?.Img;
+            else
+                return left?.Real> right?.Real;
+        }
+        public static bool operator <(Complex left, Complex right)
+        {
+            if (left?.Real == right?.Real)
+                return left?.Img < right?.Img;
+            else
+                return left?.Real < right?.Real;
         }
         #endregion
     }

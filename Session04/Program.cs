@@ -51,14 +51,14 @@ namespace Session04
             #endregion
 
             #region Unary Operators
-            Complex c1 = new Complex();
-            c1.Real = 5;
-            c1.Img = 10;
+            //Complex c1 = new Complex();
+            //c1.Real = 5;
+            //c1.Img = 10;
 
-            Complex c2 = new Complex();
-            c2.Real = 7;
-            c2.Img = 20;
-            Console.WriteLine("C1 ={0} ", c1);
+            //Complex c2 = new Complex();
+            //c2.Real = 7;
+            //c2.Img = 20;
+            //Console.WriteLine("C1 ={0} ", c1);
 
             //Complex c3 ;   
             //c3 = ++c1;
@@ -67,13 +67,26 @@ namespace Session04
 
 
 
-            Complex c3;
-            c3 = c1++;
-            Console.WriteLine("C1 ={0} ", c1);
-            Console.WriteLine($"C3 = {c3}");
+            //Complex c3;
+            //c3 = c1++;
+            //Console.WriteLine("C1 ={0} ", c1);
+            //Console.WriteLine($"C3 = {c3}");
             #endregion
 
 
+            #region Relational Operators
+            Complex c1 = new Complex();
+            c1.Real = 5;
+            c1.Img = 10;
+
+            Complex c2 = new Complex();
+            c2.Real = 7;
+            c2.Img = 20;
+
+            if (c1 > c2)
+                Console.WriteLine("C1 > C2");
+            else Console.WriteLine("C2>C1");
+            #endregion
             #endregion
 
             #endregion
