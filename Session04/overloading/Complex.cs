@@ -97,6 +97,27 @@
             else
                 return left?.Real < right?.Real;
         }
+
+
+
+
+
+        public static explicit operator int (Complex c)
+        {
+            return c?.Real ?? 0;
+        }
+
+
+
+        public static implicit operator string?(Complex c) 
+        {
+            //    if (c is not null)
+            //        return $"{c.Real} + {c.Img}";
+            //    else
+            //        return " ";
+
+            return c?.ToString() ?? string.Empty;
+        }
         #endregion
     }
 }
