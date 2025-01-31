@@ -1,4 +1,5 @@
 ﻿using Session04.overloading;
+using Session04.overriding;
 
 namespace Session04
 {
@@ -120,8 +121,19 @@ namespace Session04
             //UserViewModel userViewModel =(UserViewModel) user;
             //Console.WriteLine(userViewModel); 
             #endregion
+
+
             #endregion
 
+            #endregion
+
+
+            #region Overriding
+            TypeA typeAObj = new TypeA(5);
+            typeAObj.A = 30;
+            typeAObj.Func01();
+            typeAObj.Func02();
+           
             #endregion
         }
     }
