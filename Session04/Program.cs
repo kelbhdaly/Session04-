@@ -129,12 +129,22 @@ namespace Session04
 
 
             #region Overriding
-            TypeA typeAObj = new TypeA(5);
-            typeAObj.A = 30;
-            typeAObj.Func01();
-            typeAObj.Func02();
-           
+            //TypeA typeAObj = new TypeA(5);
+            //typeAObj.A = 30;
+            //typeAObj.Func01();
+            //typeAObj.Func02();
+
             #endregion
+
+
+            #region Exampl02
+            TypeA refBase = new TypeB(1,3); //Binding : Reference From Base To Refere To Any Object From Child 
+            // refBase.B = 5; // Invalid
+            refBase.A = 7;
+            refBase.Func01(); // This My Func01 From Base And I Am Base
+            refBase.Func02(); // This My Func02 From Base And TypeB : A = {A} , B = {B}
+            #endregion
+
         }
     }
 }

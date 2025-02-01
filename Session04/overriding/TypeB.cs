@@ -17,7 +17,7 @@
         }
         public override void Func02() // Call => Based On Object // Dynamic Ploymorphism
         {
-            Console.WriteLine("This My Func02 From Base And TypeB : A = {A} , B = {B} ");
+            Console.WriteLine($"This My Func02 From Base And TypeB : A = {A} , B = {B} ");
         }
     }
 }
