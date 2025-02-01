@@ -73,6 +73,22 @@
             //Manager manager = new Manager();
             //manager.Work();
             #endregion
+
+            #region Q05
+            /* Question 5)  
+             a) Create a base class BaseClass with a virtual method DisplayMessage that prints  "Message from BaseClass".
+             b) Create a derived class DerivedClass1 that overrides the DisplayMessage method using the override keyword.
+             C) Create another derived class DerivedClass2 that hides the DisplayMessage method using the new keyword.
+              Then explain the difference between using override and new (using binding behavior)*/
+
+            BaseClass baseClass ;
+            baseClass = new DerivedClass1();
+            baseClass.DisplayMessage(); // Method in DerivedClass1 will BE Execute Runing Time (Dynamic polymorphism)
+
+            baseClass = new DerivedClass2();
+            baseClass.DisplayMessage(); // Method in BaseClass will BE Execute Complie Time (Static polymorphism)
+           
+            #endregion
         }
     }
 }
