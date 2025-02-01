@@ -23,7 +23,7 @@ namespace Session04
         #endregion
 
 
-        public static void Process(FullTimeEmployee employee)
+        public static void Process(Employee employee)
         {
             if (employee is not null)
             {
@@ -60,30 +60,33 @@ namespace Session04
             //Console.WriteLine($"C3 = {c3}");
 
 
+            //Complex c3;
+            //c3 = c1 - c2;
+            //Console.WriteLine(c3);
             //Console.WriteLine($" C3 - C1 = {c3} - {c1} = {c3 - c1} "); 
             #endregion
 
             #region Unary Operators
-            //Complex c1 = new Complex();
-            //c1.Real = 5;
-            //c1.Img = 10;
+            Complex c1 = new Complex();
+            c1.Real = 5;
+            c1.Img = 10;
 
-            //Complex c2 = new Complex();
-            //c2.Real = 7;
-            //c2.Img = 20;
-            //Console.WriteLine("C1 ={0} ", c1);
+            Complex c2 = new Complex();
+            c2.Real = 7;
+            c2.Img = 20;
+            Console.WriteLine("C1 ={0} ", c1);
 
-            //Complex c3 ;   
-            //c3 = ++c1;
-            //Console.WriteLine("C1 ={0} ", c1);
-            //Console.WriteLine($"C3 = {c3}");
+            Complex c3;
+            c3 = ++c1;
+            Console.WriteLine("C1 ={0} ", c1);
+            Console.WriteLine($"C3 = {c3}");
 
 
 
-            //Complex c3;
-            //c3 = c1++;
-            //Console.WriteLine("C1 ={0} ", c1);
-            //Console.WriteLine($"C3 = {c3}");
+            Complex C3;
+            C3 = c1++;
+            Console.WriteLine("C1 ={0} ", c1);
+            Console.WriteLine($"C3 = {C3}");
             #endregion
 
 
@@ -161,8 +164,10 @@ namespace Session04
 
             #region Binding
 
-            FullTimeEmployee employee = new FullTimeEmployee(1,"Ali" , 20 , 200000);
-            Process(employee);
+            //FullTimeEmployee employee = new FullTimeEmployee(1,"Ali" , 20 , 200000);
+            //Process(employee);
+            //PartTimeEmployee employeePart = new PartTimeEmployee(1,"Ali" , 20 , 200000,500);
+            //Process(employeePart);
             #endregion
         }
     }

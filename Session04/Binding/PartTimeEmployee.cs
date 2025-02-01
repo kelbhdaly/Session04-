@@ -14,7 +14,7 @@ namespace Session04.Binding
         #endregion
 
         #region constructors
-        public PartTimeEmployee(int id, string? name, int age, int countOfHours , decimal hourRate)
+        public PartTimeEmployee(int id, string? name, int age, int countOfHours, decimal hourRate)
         {
             Id = id;
             Name = name;

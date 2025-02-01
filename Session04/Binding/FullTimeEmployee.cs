@@ -15,12 +15,12 @@ namespace Session04.Binding
 
 
         #region Constructors
-        public FullTimeEmployee(int id , string? name , int age , decimal salary)
+        public FullTimeEmployee(int id, string? name, int age, decimal salary)
         {
-            Id = id ;
-            Name = name ;
-            Age = age ;
-            Salary = salary ;
+            Id = id;
+            Name = name;
+            Age = age;
+            Salary = salary;
 
         }
         #endregion
@@ -29,10 +29,10 @@ namespace Session04.Binding
         public override void GetEmployeeData()
         {
             Console.WriteLine($"Data : Id = {Id} , Name = {Name} , Age = {Age} , Salary = {Salary:C}");
-        } 
+        }
 
 
-        public new void  GetEmployeeType()
+        public new void GetEmployeeType()
         {
             Console.WriteLine("I am Fulltime Employee");
         }
