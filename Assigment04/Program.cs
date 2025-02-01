@@ -1,12 +1,4 @@
-﻿using System.ComponentModel;
-using System.Threading;
-using System;
-using System.Drawing;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.IO;
-using System.Numerics;
-
-namespace Assigment04
+﻿namespace Assigment04
 {
     internal class Program
     {
@@ -69,6 +61,17 @@ namespace Assigment04
             //Complex C04;
             //C04 = C02 - C01;
             //Console.WriteLine($"C04 = {C04}");
+            #endregion
+
+            #region Q04
+            /*Create a base class named Employee with method That Work as it prints    "Employee is  working".
+            b) Create a derived class named Manager that overrides the Work method to print "Manager is managing". 
+                *Ensure that the Manager class also calls the Work method of the Employee class within its  Overridden method */
+
+            //Employee employee = new Employee();
+            //employee.Work();
+            //Manager manager = new Manager();
+            //manager.Work();
             #endregion
         }
     }
