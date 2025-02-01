@@ -81,14 +81,29 @@
              C) Create another derived class DerivedClass2 that hides the DisplayMessage method using the new keyword.
               Then explain the difference between using override and new (using binding behavior)*/
 
-            BaseClass baseClass ;
-            baseClass = new DerivedClass1();
-            baseClass.DisplayMessage(); // Method in DerivedClass1 will BE Execute Runing Time (Dynamic polymorphism)
+            //BaseClass baseClass ;
+            //baseClass = new DerivedClass1();
+            //baseClass.DisplayMessage(); // Method in DerivedClass1 will BE Execute Runing Time (Dynamic polymorphism)
 
-            baseClass = new DerivedClass2();
-            baseClass.DisplayMessage(); // Method in BaseClass will BE Execute Complie Time (Static polymorphism)
-           
+            //baseClass = new DerivedClass2();
+            //baseClass.DisplayMessage(); // Method in BaseClass will BE Execute Complie Time (Static polymorphism)
+
             #endregion
+
+            #region Part02
+            Duration D01 = new Duration(1, 30, 60);
+            Console.WriteLine(D01);
+
+            Duration D02 = new Duration(3600);
+            Console.WriteLine(D02);
+            
+            Duration D03 = new Duration(7800);
+            Console.WriteLine(D03);
+            
+            Duration D04 = new Duration(666);
+            Console.WriteLine(D04);
+            #endregion
+
         }
     }
 }
