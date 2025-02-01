@@ -1,4 +1,6 @@
-﻿using Session04.overloading;
+﻿using System.Diagnostics;
+using Session04.Binding;
+using Session04.overloading;
 using Session04.overriding;
 
 namespace Session04
@@ -20,6 +22,16 @@ namespace Session04
         //} 
         #endregion
 
+
+        public static void Process(FullTimeEmployee employee)
+        {
+            if (employee is not null)
+            {
+                employee.GetEmployeeData();
+                employee.GetEmployeeType();
+            }
+
+        }
         static void Main(string[] args)
         {
             #region overloading
@@ -138,13 +150,20 @@ namespace Session04
 
 
             #region Exampl02
-            TypeA refBase = new TypeB(1,3); //Binding : Reference From Base To Refere To Any Object From Child 
-            // refBase.B = 5; // Invalid
-            refBase.A = 7;
-            refBase.Func01(); // This My Func01 From Base And I Am Base
-            refBase.Func02(); // This My Func02 From Base And TypeB : A = {A} , B = {B}
+            //TypeA refBase = new TypeB(1,3); //Binding : Reference From Base To Refere To Any Object From Child 
+            //// refBase.B = 5; // Invalid
+            //refBase.A = 7;
+            //refBase.Func01(); // This My Func01 From Base And I Am Base
+            //refBase.Func02(); // This My Func02 From Base And TypeB : A = {A} , B = {B}
             #endregion
 
+
+
+            #region Binding
+
+            FullTimeEmployee employee = new FullTimeEmployee(1,"Ali" , 20 , 200000);
+            Process(employee);
+            #endregion
         }
     }
 }
