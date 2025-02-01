@@ -2,6 +2,9 @@
 using System.Threading;
 using System;
 using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.IO;
+using System.Numerics;
 
 namespace Assigment04
 {
@@ -42,7 +45,31 @@ namespace Assigment04
             //Console.WriteLine(R01);
             #endregion
 
+            #region Q03
+            /*  Define a class Complex Number that represents a complex number with real and imaginary parts.
+                * Note: Overload the +, - operator to add and subtract two complex numbers. */
 
+            //Complex C01 = new Complex();
+            //C01.Real = 5;
+            //C01.Img = 3;
+            //Console.WriteLine("C01 ="+C01);
+
+            //Complex C02 = new Complex();
+            //C02.Real = 7;
+            //C02.Img = 4;
+            //Console.WriteLine("C02 =" + C02);
+            ////+
+            //Complex C03;
+            //C03 = C01 + C02;
+            //Console.WriteLine($"C03 = {C03} ");
+
+
+            ////-
+
+            //Complex C04;
+            //C04 = C02 - C01;
+            //Console.WriteLine($"C04 = {C04}");
+            #endregion
         }
     }
 }
