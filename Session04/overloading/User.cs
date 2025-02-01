@@ -10,12 +10,14 @@ namespace Session04.overloading
     //Model 
     internal class User
     {
+        #region Properties
         public int Id { get; set; }
-        public string?  FullName { get; set; }
-        public string?  Email  { get; set; }
+        public string? FullName { get; set; }
+        public string? Email { get; set; }
 
         public string? Password { get; set; }
-        public Guid SecurityStamp { get; set; }
+        public Guid SecurityStamp { get; set; } 
+        #endregion
 
 
 
